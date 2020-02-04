@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- Elizabeth Moran-->
+<html>
+
+<head>
+<!-- Import special Google fonts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"/>  </script>
+<link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="stylesheets/moran19_mystyle.css">
+<script type="text/javascript" src="javascripts/cheesecakes.js"></script>
+</head>
+
+
+<div id="wrap">
+    
+	<!-- This section creates the  -->
+	<!-- the cheesecake-flavor-selector separated by three spaces. -->
+	<h1>Cheesecake Order Form</h1>
+	
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/
+	Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg/
+	800px-Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" width="150" height="150">
+	
+	<p id="quantity">Quantity Topping</p>
+	
+	<!-- This section creates a table containing the topping quantity drop-down menu, and -->
+	<!-- the cheesecake-flavor-selector separated by three spaces. -->
+	<table id = "table1">
+      <tr>
+        <td>
+		   <select>
+	           <option value="one">1</option>
+	           <option value="two">2</option>
+	           <option value="three">3</option>
+	           <option value="four">4</option>
+	        </select>
+		</td>
+		<td>
+		    <p>&nbsp&nbsp&nbsp </p>
+		</td>
+        <td>
+		    <input type="radio" name="topping" value="Plain"> Plain<br>
+            <input type="radio" name="topping" value="Cherry"> Cherry<br>
+            <input type="radio" name="topping" value="Chocolate"> Chocolate<br>
+		</td>
+      </tr>
+	</table>
+	
+	<!-- This section creates the "Notes:" text, the area to enter special instructions, and the "order" button. -->
+	<p id="notes">Notes:</p>
+	<table id = "table2">
+		<tr>
+		    <td>
+			<textarea rows="4" cols="50" placeholder="Enter any special instructions here." id = "instructions"></textarea><br>
+			<button id="order" onclick="warnVegan()">Order</button>
+			</td>
+		</tr>
+	</table>
+	
+	<!-- This section creates the "Total Orders Last Month" text, and the list of last month's orders. -->
+	<div class ="totalOrders">
+		<h3>Total Orders Last</h3>
+	<!--Credit goes to w3schools for the drop-down menu code 
+		Link to website I used:
+		https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button*/-->
+	</div>
+	<div class="container"> <!-- dropdown -> container -->
+		<a href="#" onMouseOver="menuOpen()"><input type='button' value='Jan' id='button1'></a>
+		<div id="dropMenu">
+		    <a href="#" onClick = "sendVal(this.innerHTML);" value = "Jan">Jan</a>
+			<a href="#" onClick = "sendVal(this.innerHTML);" value = "Feb">Feb</a>
+			<a href="#" onClick = "sendVal(this.innerHTML);" value = "Mar">Mar</a>
+			<a href="#" onClick = "sendVal(this.innerHTML);" value = "Apr">Apr</a>
+			<a href="#" onClick = "sendVal(this.innerHTML);" value = "May">May</a>
+			<a href="#" onClick = "sendVal(this.innerHTML);" value = "Jun">Jun</a>
+			<a href="#" onClick = "sendVal(this.innerHTML);" value = "Jul">Jul</a>
+			<a href="#" onClick = "sendVal(this.innerHTML);" value = "Aug">Aug</a>
+			<a href="#" onClick = "sendVal(this.innerHTML);" value = "Sep">Sep</a>
+			<a href="#" onClick = "sendVal(this.innerHTML);" value = "Oct">Oct</a>
+			<a href="#" onClick = "sendVal(this.innerHTML);" value = "Nov">Nov</a>
+			<a href="#" onclick = "sendVal(this.innerHTML);" value = "Dec">Dec</a>
+		</div>
+	</div>
+
+	
+	<table>
+	  <tr>
+		 <td>
+		    <ul>
+			   <li>11 cherry</li>
+			   <li>17 chocolate</li>
+			   <li>31 plain</li>
+		    </ul>
+		  </td>
+      </tr>
+	</table>
+</div>
+</body>
+</html>

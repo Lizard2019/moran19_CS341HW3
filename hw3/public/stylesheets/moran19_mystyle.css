@@ -1,0 +1,100 @@
+/*Elizabeth Moran*/
+
+/*Center all of the content in my html file*/
+#wrap { 
+	width: 900px; 
+	margin: 0 auto; 
+}
+
+/*Create a gradient background of maroon and coral*/
+body {
+	background: #672c45;
+    background-image: linear-gradient(to bottom, #672c45 0%, #fdc29d 100%); 
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*Put a special gold border around "Cheesecake Order Form", and customize the font color/type/size */
+h1 {
+  border: 5px double gold;
+  color: white;
+  text-align: center;
+  font-family: 'Amatic SC';
+  font-size: 80px;
+}
+
+/*Center the cheesecake image*/
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Set font type,color, and alignment for "Quantity Topping" and "Notes" */
+p {
+  color: gold;
+  text-align: center;
+  font-family: 'Sofia';
+  font-size: 40px;
+}
+
+/*Center every table*/
+table {
+    margin: 0px auto;            
+}​
+
+/*Center the "Enter any special instructions here" box*/
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Set font size, color, and alignment for "Total Orders Last Month" */
+h3 {
+  border-top: 5px double gold;
+  color: #672c45;
+  text-align: center;
+  font-family: 'Amatic SC';
+  font-size: 30px;
+}
+
+#dropMenu{
+  display: none;
+  height: 75px;
+  overflow: auto;
+  width: 58px;
+  background-color: transparent;
+  color: #672c45;
+  padding: 16px;
+  font-size: 30px;
+  font-family: 'Amatic SC';
+  border: double gold;
+  cursor: pointer;
+  margin-left: 425px;}
+
+/*Had help from https://www.w3resource.com/jquery-exercises/part1/jquery-practical-exercise-30.php*/
+#button1 {
+  background-color: transparent;
+  color: #672c45;
+  padding: 16px;
+  font-size: 30px;
+  font-family: 'Amatic SC';
+  border: double gold;
+  cursor: pointer;
+  margin-left: 425px;
+}
+
+
+.totalOrders{
+	float: center;
+}
+
+/*Set font size, color, and alignment for the list of orders */
+ul {
+  color: #eb01a5;
+  font-family: 'Architects Daughter';
+  font-size: 20px;
+}
